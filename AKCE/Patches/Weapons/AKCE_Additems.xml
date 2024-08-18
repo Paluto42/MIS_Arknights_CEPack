@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--手动绕过本体的CE补丁-->
+	<!--Caster-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Eyjafjalla" or defName="AK_Recruit_Ifrit" or defName="AK_Recruit_Skyfire" or defName="AK_Recruit_Amiya" or defName="AK_Recruit_Absinthe" or defName="AK_Recruit_Carnelian" or defName="AK_Recruit_Beeswax"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Indigo" or defName="AK_Recruit_Goldenglow" or defName="AK_Recruit_Tomimi" or defName="AK_Recruit_Kjera" or defName="AK_Recruit_Astgenne" or defName="AK_Recruit_Harmonie" or defName="AK_Recruit_Lin"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Hoolheyak" or defName="AK_Recruit_Santalla" or defName="AK_Recruit_Heteronucleoid" or defName="AK_Recruit_Delphine"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<!--Defender-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Cuora" or defName="AK_Recruit_Hoshiguma" or defName="AK_Recruit_Mudrock" or defName="AK_Recruit_Aurora" or defName="AK_Recruit_Penance"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<!--Guard-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Silverash" or defName="AK_Recruit_Skadi" or defName="AK_Recruit_Specter" or defName="AK_Recruit_Thorns" or defName="AK_Recruit_Surtr" or defName="AK_Recruit_Blaze" or defName="AK_Recruit_Cutter"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Franka" or defName="AK_Recruit_Frostleaf" or defName="AK_Recruit_Lappland" or defName="AK_Recruit_Mousse" or defName="AK_Recruit_Whislash" or defName="AK_Recruit_Swire" or defName="AK_Recruit_Pallas"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Irene" or defName="AK_Recruit_Tequila" or defName="AK_Recruit_LaPluma" or defName="AK_Recruit_Estelle" or defName="AK_Recruit_Flint" or defName="AK_Recruit_Savage" or defName="AK_Recruit_Maynar"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Sideroca" or defName="AK_Recruit_Astesia" or defName="AK_Recruit_Chongyue" or defName="AK_Recruit_Qiubai" or defName="AK_Recruit_Indra" or defName="AK_Recruit_Morgan" or defName="AK_Recruit_Utage"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Jackie" or defName="AK_Recruit_RadiantKnight"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<!--Medic-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Shining" or defName="AK_Recruit_Silence" or defName="AK_Recruit_Gavial" or defName="AK_Recruit_Kaltsit" or defName="AK_Recruit_Nightingale" or defName="AK_Recruit_Perfumer" or defName="AK_Recruit_Ptilopsis"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Myrrh" or defName="AK_Recruit_Purestream" or defName="AK_Recruit_Warfarin" or defName="AK_Recruit_Sussurro" or defName="AK_Recruit_Ceylon" or defName="AK_Recruit_Mulberry"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_FlameShadow" or defName="AK_Recruit_Vendela"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<!--Sniper-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Exusiai" or defName="AK_Recruit_Jessica"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Executor" or defName="AK_Recruit_Pinecone"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Greythroat" or defName="AK_Recruit_Platinum" or defName="AK_Recruit_Archetto" or defName="AK_Recruit_Bluepoison" or defName="AK_Recruit_April" or defName="AK_Recruit_Vermeil" or defName="AK_Recruit_Kroos"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Fartooth" or defName="AK_Recruit_Lunacub" or defName="AK_Recruit_Firewatch"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Provence" or defName="AK_Recruit_Schwarz" or defName="AK_Recruit_Pozyomka"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Rosa" or defName="AK_Recruit_Toddifons" or defName="AK_Recruit_Typhon" or defName="AK_Recruit_Erato"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Meteorite" or defName="AK_Recruit_Fiammetta"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+    
+    <Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Executor" or defName="AK_Recruit_Pinecone"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_23x75mmR_Buck</item>
+                <amount>10</amount>
+            </li>
+		</value>
+	</Operation>
+
+     <Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Exusiai"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_45ACP_AP</item>
+                <amount>30</amount>
+            </li>
+		</value>
+	</Operation>
+	<!--速射模板-->
+    <Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Greythroat" or defName="AK_Recruit_Platinum" or defName="AK_Recruit_Archetto" or defName="AK_Recruit_April" or defName="AK_Recruit_Vermeil" or defName="AK_Recruit_Kroos"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_CrossbowBolt_AKCEMarksman</item>
+                <amount>10</amount>
+            </li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Jessica"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_45ACP_AP</item>
+                <amount>21</amount>
+            </li>
+		</value>
+	</Operation>
+    <!--重射手模板-->
+    <Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Provence" or defName="AK_Recruit_Schwarz" or defName="AK_Recruit_Pozyomka"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_CrossbowBolt_AKCEHeavyshooter</item>
+                <amount>10</amount>
+            </li>
+		</value>
+	</Operation>
+    <!--群狙模板-->
+    <Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_AgentW" or defName="AK_Recruit_Meteorite" or defName="AK_Recruit_Fiammetta"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_40x46mmGrenade_HE</item>
+                <amount>8</amount>
+            </li>
+		</value>
+	</Operation>
+    <!--攻城手模板-->
+    <Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Rosa" or defName="AK_Recruit_Toddifons" or defName="AK_Recruit_Typhon" or defName="AK_Recruit_Erato"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_CrossbowBolt_AKCEBesiegerJavelins</item>
+                <amount>8</amount>
+            </li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Bluepoison"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_CrossbowBolt_PoisonousAKCEMarksman</item>
+                <amount>20</amount>
+            </li>
+		</value>
+	</Operation>
+    <!--神射手模板-->
+    <Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Fartooth" or defName="AK_Recruit_Lunacub" or defName="AK_Recruit_Firewatch"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_CrossbowBolt_AKCEDeadeye</item>
+                <amount>10</amount>
+            </li>
+		</value>
+	</Operation>
+
+	<!--Specialist-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Robin" or defName="AK_Recruit_Red" or defName="AK_Recruit_Gladiia" or defName="AK_Recruit_Weedy" or defName="AK_Recruit_Mizuki" or defName="AK_Recruit_Gravel" or defName="AK_Recruit_Kafka"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Cliffheart" or defName="AK_Recruit_Manticore" or defName="AK_Recruit_Kazemaru" or defName="AK_Recruit_Almond"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<!--Supporter-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Suzuran" or defName="AK_Recruit_Angelina" or defName="AK_Recruit_Magallan" or defName="AK_Recruit_Deepcolor" or defName="AK_Recruit_Pramanix" or defName="AK_Recruit_Glaucus" or defName="AK_Recruit_Scene"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Sora" or defName="AK_Recruit_Ling" or defName="AK_Recruit_Istina" or defName="AK_Recruit_Heidi" or defName="AK_Recruit_Gnosis" or defName="AK_Recruit_Quercus" or defName="AK_Recruit_Roberta"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Proviso" or defName="AK_Recruit_Mayer" or defName="AK_Recruit_CorruptingHeart" or defName="AK_Recruit_Virtuosa"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<!--Vanguard-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Beanstalk"]</xpath>
+		<value>
+		    <items></items>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Beanstalk" or defName="AK_Weapon_Blacknight"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_CrossbowBolt_AKCEMarksman</item>
+                <amount>20</amount>
+            </li>
+		</value>
+	</Operation>
+
+</Patch>

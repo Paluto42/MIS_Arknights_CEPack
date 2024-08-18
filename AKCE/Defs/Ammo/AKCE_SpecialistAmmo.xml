@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ================== ProjectilesBase ================== -->
+
+	<ThingDef Name="BaseSpecialistSingleProjectileCE" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Ammo/MagicOrb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+			<speed>50</speed>
+            <armorPenetrationBlunt>2.29</armorPenetrationBlunt>
+		    <armorPenetrationSharp>5.1</armorPenetrationSharp>
+		</projectile>
+	</ThingDef>
+
+    <ThingDef Name="BaseSpecialistAOEProjectileCE" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Ammo/MagicOrb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>ToxGas</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+			<speed>50</speed>
+            <armorPenetrationBlunt>2.29</armorPenetrationBlunt>
+		    <armorPenetrationSharp>5.1</armorPenetrationSharp>
+            <explosionRadius>1.9</explosionRadius>
+		</projectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef ParentName="BaseSpecialistAOEProjectileCE">
+		<defName>Projectile_AKCE_SpecialistAOEGeneralAOE</defName>
+		<label>范围攻击(群体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>50</speed>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseSpecialistSingleProjectileCE">
+		<defName>Projectile_AKCE_Robin</defName>
+		<label>投掷飞刀</label>
+        <graphicData>
+		    <texPath>Ammo/Specialist/Robin_Knife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Cut</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>50</speed>
+			<armorPenetrationBlunt>2.88</armorPenetrationBlunt>
+			<armorPenetrationSharp>6</armorPenetrationSharp>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseSpecialistSingleProjectileCE">
+		<defName>Projectile_AKCE_Dorothy</defName>
+		<label>发射飞针</label>
+        <graphicData>
+		    <texPath>Ammo/Specialist/DorothyHandOfDestinyB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>24</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>50</speed>
+			<armorPenetrationBlunt>2.88</armorPenetrationBlunt>
+			<armorPenetrationSharp>6</armorPenetrationSharp>
+		</projectile>
+	</ThingDef>
+
+</Defs>

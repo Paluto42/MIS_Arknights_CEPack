@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--招募远程干员自带弹药-->
+	<!--Defender-->
+
+	<Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Liskarm"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_45ACP_AP</item>
+                <amount>14</amount>
+            </li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Ashlock" or defName="AK_Recruit_Horn"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_25x59mmGrenade_HE</item>
+                <amount>6</amount>
+            </li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Liberated"]/items</xpath>
+		<value>
+			<li>
+                <item>Ammo_556x45mmNATO_FMJ</item>
+                <amount>25</amount>
+            </li>
+			<li>
+                <item>Ammo_45ACP_AP</item>
+                <amount>14</amount>
+            </li>
+			<li>
+                <item>Ammo_25x59mmGrenade_HE</item>
+                <amount>6</amount>
+            </li>
+		</value>
+	</Operation>
+
+	<!--recruit里面不自带<items>的Sniper只能在Additems里面添加-->
+
+    <!--Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Rosmontis"]/items</xpath>
+		<value>
+			<li>
+                <item>AK_Weapon_RosmontisA</item>
+                <amount>1</amount>
+            </li>
+		</value>
+	</Operation-->
+
+	<!--Specialist-->
+	<Operation Class="PatchOperationAdd" MayRequire="MIS.Arknights">
+		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Dorothy"]/items</xpath>
+		<value>
+			<li>
+                <item>Bullet_6x18mmCharged</item>
+                <amount>8</amount>
+            </li>
+		</value>
+	</Operation>
+
+	<!--Supporter-->
+
+</Patch>

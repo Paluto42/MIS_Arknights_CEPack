@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="AKCE_ArrowAmmoBase" ParentName="AmmoBase" Abstract="True">
+		<techLevel>Undefined</techLevel>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef Name="AKCE_AmmoRecipeCrossbowBoltBase" Abstract="true">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>500</workAmount>
+		<workSkill>Crafting</workSkill>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<recipeUsers>
+			<!-- Need an empty list here or the ammo injector will throw a null ref exception -->
+		</recipeUsers>
+		<unfinishedThingDef>UnfinishedArrows</unfinishedThingDef>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ================== ProjectilesBase ================== -->
+
+	<ThingDef Name="BaseArtOrbSingleProjectileCE" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Ammo/MagicOrb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>AK_Projectile_Magic</damageDef>
+            <stoppingPower>3</stoppingPower>
+			<speed>45</speed>
+            <soundExplode>ThumpCannon_Impact</soundExplode>
+		</projectile>
+	</ThingDef>
+
+    <ThingDef Name="BaseArtOrbAOEProjectileCE" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Ammo/MagicOrb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>AK_Projectile_Magic</damageDef>
+            <stoppingPower>3</stoppingPower>
+			<speed>45</speed>
+            <explosionRadius>1.9</explosionRadius>
+            <soundExplode>ThumpCannon_Impact</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Name="BaseArtRangedAOEProjectileCE" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Ammo/Flame_CE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>AK_Projectile_Magic</damageDef>
+            <stoppingPower>3</stoppingPower>
+			<speed>45</speed>
+            <explosionRadius>1.9</explosionRadius>
+            <soundExplode>ThumpCannon_Impact</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Name="BaseArtFireProjectileCE" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Ammo/MagicFire</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Flame</damageDef>
+            <stoppingPower>3</stoppingPower>
+			<speed>45</speed>
+            <soundExplode>ThumpCannon_Impact</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef ParentName="BaseArtOrbSingleProjectileCE">
+		<defName>Projectile_AKCE_GeneralSingle</defName>
+		<label>法术(单体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>45</speed>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBlunt>16.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>5.1</armorPenetrationSharp>
+            <secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>6</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtFireProjectileCE">
+		<defName>Projectile_AKCE_GeneralSingleFire</defName>
+		<label>法术(单体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>50</speed>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBlunt>16.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>5.1</armorPenetrationSharp>
+            <secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>6</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtOrbAOEProjectileCE">
+		<defName>Projectile_AKCE_GeneralAOE</defName>
+		<label>法术(群体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>50</speed>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBlunt>12.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>5.1</armorPenetrationSharp>
+            <secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>6</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtRangedAOEProjectileCE">
+		<defName>Projectile_AKCE_GeneralRangedAOE</defName>
+		<label>法术(群体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>50</speed>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBlunt>12.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>4</armorPenetrationSharp>
+            <secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>6</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	
+
+	<ThingDef ParentName="BaseArtOrbSingleProjectileCE">
+		<defName>Projectile_AKCE_Absinthe</defName>
+		<label>法术(单体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>50</speed>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBlunt>12.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>5.1</armorPenetrationSharp>
+            <secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>6</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+</Defs>

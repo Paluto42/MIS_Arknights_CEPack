@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ================== Projectiles ================== -->
+    <!-- ================== 术士没有细分弹药 ================== -->
+
+	<ThingDef ParentName="BaseArtOrbSingleProjectileCE">
+		<defName>Projectile_AKCE_CasterSingle</defName>
+		<label>法术(单体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>45</speed>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBlunt>12.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>5.1</armorPenetrationSharp>
+            <secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>6</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtFireProjectileCE">
+		<defName>Projectile_AKCE_CasterSingleFire</defName>
+		<label>法术(单体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>45</speed>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBlunt>12.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>5.1</armorPenetrationSharp>
+            <secondaryDamage>
+				<li>
+					<def>AK_Projectile_Magic</def>
+					<amount>6</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtOrbAOEProjectileCE">
+		<defName>Projectile_AKCE_CasterAOE</defName>
+		<label>法术(群体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>45</speed>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBlunt>12.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>5.1</armorPenetrationSharp>
+            <secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>6</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtRangedAOEProjectileCE">
+		<defName>Projectile_AKCE_CasterRangedAOE</defName>
+		<label>法术(群体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>45</speed>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBlunt>12.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>4</armorPenetrationSharp>
+            <secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>6</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+</Defs>

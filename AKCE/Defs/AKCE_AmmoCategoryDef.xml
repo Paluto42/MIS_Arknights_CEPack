@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>AKCE_MarksmanArrowAmmo</defName>
+		<label>速射手使用的弩箭</label>
+		<description>速射手desc.</description>
+		<advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>AKCE_DeadeyeArrowAmmo</defName>
+		<label>神射手使用的弩箭</label>
+		<description>神射手desc.</description>
+		<advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>AKCE_HeavyshooterArrowAmmo</defName>
+		<label>重射手使用的弩箭</label>
+		<description>重射手desc.</description>
+		<advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>AKCE_BesiegerArrowAmmo</defName>
+		<label>攻城手使用的弩箭</label>
+		<description>攻城手desc.</description>
+		<advanced>true</advanced>
+	</CombatExtended.AmmoCategoryDef>
+
+</Defs>

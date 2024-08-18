@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="AKCE_Apparel_ShieldBase" ParentName="ShieldBase" Abstract="True">
+        <thingCategories Inherit="false">
+			<li>AK_Apparel</li>
+		</thingCategories>
+		<label>重装干员的盾牌</label>
+		<description>轻便，安全，可靠.</description>
+        <useHitPoints>false</useHitPoints>
+        <smeltable>false</smeltable>
+		<techLevel>Undefined</techLevel>
+        <recipeMaker IsNull="true"/>
+		<tradeTags IsNull="true"/>
+		<graphicData>
+			<texPath>Things/Apparel/Shields/Assault_Shield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+            <Mass>7</Mass>
+			<Bulk>8</Bulk>
+			<WornBulk>5</WornBulk>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+            <AK_ArmorRating_Magic>0.05</AK_ArmorRating_Magic>
+            <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.27</ArmorRating_Heat>
+			<StuffEffectMultiplierArmor>8</StuffEffectMultiplierArmor>
+            <EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ReloadSpeed>-0.05</ReloadSpeed>
+			<MeleeHitChance>-1</MeleeHitChance>
+			<ShootingAccuracyPawn>-0.25</ShootingAccuracyPawn>
+			<AimingAccuracy>-0.15</AimingAccuracy>
+			<Suppressability>-0.45</Suppressability>
+			<MeleeCritChance>-0.2</MeleeCritChance>
+			<MeleeParryChance>1.0</MeleeParryChance>
+		</equippedStatOffsets>
+        <comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+        <relicChance>0</relicChance>
+        <tradeability>None</tradeability>
+        <tickerType>Never</tickerType>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>
+        <randomizeRotationOnSpawn>false</randomizeRotationOnSpawn>
+        <canLoadIntoCaravan>false</canLoadIntoCaravan>
+        <burnableByRecipe>false</burnableByRecipe>
+		<modExtensions>
+			<li Class="CombatExtended.ShieldDefExtension">
+				<shieldCoverage>
+					<li>Hands</li>
+					<li>Arms</li>
+					<li>Shoulders</li>
+					<li>Torso</li>
+                    <li>Neck</li>
+				</shieldCoverage>
+				<drawAsTall>false</drawAsTall>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

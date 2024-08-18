@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo_AKCEArrow</defName>
+		<label>neolithic</label>
+		<parent>Ammo</parent>
+		<iconPath>Ammo/AmmoMedieval</iconPath>
+	</ThingCategoryDef>
+
+</Defs>

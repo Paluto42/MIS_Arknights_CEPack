@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Combat Extended: Arknights Overhaul</name>
+	<author>Paluto22 ,3HST Limited</author>
+	<packageId>Paluto22.AK.CombatExtended</packageId>
+	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=3239932125</url>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>MIS.Arknights</li>
+		<li>CETeam.CombatExtended</li>
+	</loadAfter>
+	<modDependencies>
+		<li>
+			<packageId>CETeam.CombatExtended</packageId>
+			<displayName>Combat Extended</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2890901044</downloadUrl>
+		</li>
+		<li>
+			<packageId>MIS.Arknights</packageId>
+			<displayName>M.I.S. - Arknights</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2910546545</downloadUrl>
+		</li>
+	</modDependencies>
+	<description>
+Version: 0.1.2.5\n\nCombat Extended 明日方舟拓展 Beta\n
+为所有有远程攻击手段的干员引入CE弹药机制并大修伤害(如修)\n现在大部分狙击干员需要制造分支对应的弹药才能射击
+干员的近战攻击现在也使用CE的护甲穿透计算
+数值平衡设计尚未完善，正义度较高(也许?)
+
+以后会添加C#实现的一些新弹药机制更好的匹配技能
+
+参考了3hstltd的CEPatch,在此特别鸣谢3hst有限公司的支持。
+    </description>
+</ModMetaData>

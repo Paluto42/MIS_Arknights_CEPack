@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ================== ProjectilesBase ================== -->
+
+	<ThingDef Name="BaseSupporterSingleProjectileCE" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Ammo/MagicOrb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+			<speed>50</speed>
+            <armorPenetrationBlunt>2.29</armorPenetrationBlunt>
+		    <armorPenetrationSharp>5.1</armorPenetrationSharp>
+		</projectile>
+	</ThingDef>
+
+	<!-- ================== ProjectilesTemplate ================== -->
+
+	<ThingDef ParentName="BaseArtOrbSingleProjectileCE">
+		<defName>Projectile_AKCE_GeneralSupporterA</defName>
+		<label>法术(单体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>40</speed>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>8</stoppingPower>
+            <secondaryDamage>
+			    <li>
+					<def>Flame</def>
+					<amount>4</amount>
+				</li>
+				<li>
+					<def>Stun</def>
+					<amount>2</amount>
+				</li>
+			</secondaryDamage>
+            <armorPenetrationBlunt>6.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>2.1</armorPenetrationSharp>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtOrbSingleProjectileCE">
+		<defName>Projectile_AKCE_GeneralSupporterB</defName>
+		<label>法术(单体)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>40</speed>
+			<damageAmountBase>10</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+			<armorPenetrationBlunt>6.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>2.1</armorPenetrationSharp>
+            <secondaryDamage>
+				<li>
+					<def>Flame</def>
+					<amount>4</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+    <ThingDef ParentName="BaseSupporterSingleProjectileCE">
+		<defName>Projectile_AKCE_CorruptingHeartI</defName>
+		<label>轻吟</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>40</speed>
+			<damageAmountBase>22</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<armorPenetrationBlunt>6.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>2.1</armorPenetrationSharp>
+			<soundExplode>ThumpCannon_Impact</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseSupporterSingleProjectileCE">
+		<defName>Projectile_AKCE_CorruptingHeartII</defName>
+		<label>咏唱</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>40</speed>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<armorPenetrationBlunt>6.48</armorPenetrationBlunt>
+			<armorPenetrationSharp>2.1</armorPenetrationSharp>
+			<soundExplode>ThumpCannon_Impact</soundExplode>
+		</projectile>
+	</ThingDef>
+
+</Defs>
