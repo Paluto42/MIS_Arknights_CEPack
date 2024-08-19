@@ -247,6 +247,18 @@
 		</projectile>
 	</ThingDef>
 
+	<ThingDef Name="AK_BulletBaseProjectile" ParentName="BaseBulletCE" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>50</speed>
+			<stoppingPower>2</stoppingPower>
+		</projectile>
+	</ThingDef>
+
 	<!-- ==================== Projectiles ========================== -->
 	<ThingDef ParentName="BaseShortXBowProjectile">
 	    <defName>Projectile_AKCE_Beanstalk</defName>
@@ -265,6 +277,25 @@
 			<damageAmountBase>10</damageAmountBase>
 			<armorPenetrationSharp>6</armorPenetrationSharp>
 			<armorPenetrationBlunt>2.5</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="AK_BulletBaseProjectile">
+		<defName>Projectile_AKCE_ChenHolungday</defName>
+		<label>射击</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>38</damageAmountBase>
+			<extraDamages>
+				<li>
+				    <def>Frostbite</def>
+					<!--伤害类型-->
+					<amount>16</amount>
+					<!--伤害数值-->
+			    </li>
+			</extraDamages>
+			<soundExplode>ThumpCannon_Impact</soundExplode>
+			<armorPenetrationSharp>16</armorPenetrationSharp>
+		    <armorPenetrationBlunt>64.5</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 	<!-- ===============速射手=============== -->
@@ -398,7 +429,7 @@
 
 	<ThingDef ParentName="BaseArrowDProjectile">
 		<defName>Projectile_AKCE_Pozyomka</defName>
-		<label>红太狼的弩箭</label>
+		<label>鸿雪的弩箭</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>31</damageAmountBase>
 			<armorPenetrationSharp>18</armorPenetrationSharp>
@@ -431,7 +462,7 @@
 		<label>提丰的弩箭</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>48</damageAmountBase>
-			<armorPenetrationSharp>30</armorPenetrationSharp>
+			<armorPenetrationSharp>28</armorPenetrationSharp>
 			<armorPenetrationBlunt>48.68</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>

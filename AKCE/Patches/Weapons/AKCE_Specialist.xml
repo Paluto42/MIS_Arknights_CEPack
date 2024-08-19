@@ -272,25 +272,79 @@
 		<value>
 			<tools Inherit = "false">
 				<li Class="CombatExtended.ToolCE">
-					<label>handle</label>
+					<label>触须捅</label>
 					<capacities>
-						<li>Poke</li>
+						<li>Stab</li>
 					</capacities>
-					<power>2</power>
+					<power>45</power>
 					<chanceFactor>0.33</chanceFactor>
-					<cooldownTime>1.44</cooldownTime>
-					<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
+					<cooldownTime>2.8</cooldownTime>
+					<armorPenetrationBlunt>8.425</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
-					<label>head</label>
+					<label>触须抽打</label>
 					<capacities>
 						<li>Blunt</li>
 					</capacities>
-					<power>22</power>
-					<cooldownTime>2.36</cooldownTime>
-					<armorPenetrationBlunt>11.76</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+					<power>39</power>
+					<cooldownTime>2.8</cooldownTime>
+					<armorPenetrationBlunt>12.76</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>触须劈砍</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>48</power>
+					<cooldownTime>3.4</cooldownTime>
+					<armorPenetrationSharp>4</armorPenetrationSharp>
+					<armorPenetrationBlunt>10.46</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>触须突刺</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>28</power>
+					<extraMeleeDamages>
+                      <li>
+                        <def>ToxGas</def>
+                        <amount>8</amount>
+						<chance>0.3</chance>
+                      </li>
+					  <li>
+                        <def>ToxGas</def>
+                        <amount>8</amount>
+						<chance>0.3</chance>
+                      </li>
+					</extraMeleeDamages>
+					<cooldownTime>2.0</cooldownTime>
+					<armorPenetrationSharp>6</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.76</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>触须撕咬</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>16</power>
+					<extraMeleeDamages>
+                      <li>
+                        <def>ToxGas</def>
+                        <amount>8</amount>
+						<chance>0.3</chance>
+                      </li>
+					  <li>
+                        <def>ToxGas</def>
+                        <amount>8</amount>
+						<chance>0.3</chance>
+                      </li>
+					</extraMeleeDamages>
+					<cooldownTime>1.2</cooldownTime>
+					<armorPenetrationSharp>6</armorPenetrationSharp>
+					<armorPenetrationBlunt>8.76</armorPenetrationBlunt>
 				</li>
 			</tools>
 		</value>
@@ -950,6 +1004,178 @@
 				<MeleeCritChance>1.00</MeleeCritChance>
 				<MeleeParryChance>0</MeleeParryChance>
 				<MeleeDodgeChance>0.9</MeleeDodgeChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<!--=================阿斯卡纶================-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_Ascalon"]/tools</xpath>
+		<value>
+			<tools Inherit = "false">
+				<li Class="CombatExtended.ToolCE">
+					<label>拳刃</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>0.5</cooldownTime>
+					<armorPenetrationSharp>4</armorPenetrationSharp>
+					<armorPenetrationBlunt>12.425</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>拳击</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>30</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationBlunt>11.76</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_Ascalon"]</xpath>
+		<value>
+			<statBases>
+				<Bulk>3.5</Bulk>
+				<MeleeCounterParryBonus>0.35</MeleeCounterParryBonus>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_Ascalon"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.2</MeleeCritChance>
+				<MeleeParryChance>0.35</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<!--=================琳琅诗怀雅================-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_SwireElegantWit"]/tools</xpath>
+		<value>
+			<tools Inherit = "false">
+				<li Class="CombatExtended.ToolCE">
+					<label>砸</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>1</cooldownTime>
+					<armorPenetrationSharp>4</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.425</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>猛砸</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>30</power>
+					<extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>5</amount>
+                        </li>
+                    </extraMeleeDamages>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationBlunt>12.76</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_SwireElegantWit"]</xpath>
+		<value>
+			<statBases>
+				<Bulk>4.5</Bulk>
+				<MeleeCounterParryBonus>0.80</MeleeCounterParryBonus>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_SwireElegantWit"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.25</MeleeCritChance>
+				<MeleeParryChance>0.25</MeleeParryChance>
+				<MeleeDodgeChance>0.25</MeleeDodgeChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<!-- ========== 幽灵鲨 ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_SpecterUnchained"]/tools</xpath>
+		<value>
+			<tools Inherit = "false">
+				<li Class="CombatExtended.ToolCE">
+					<label>链锯猛砸</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>45</power>
+					<cooldownTime>1.4</cooldownTime>
+					<chanceFactor>0.10</chanceFactor>
+					<armorPenetrationBlunt>12.80</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>链锯切割</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>57</power>
+					<cooldownTime>1</cooldownTime>
+					<armorPenetrationBlunt>1.4</armorPenetrationBlunt>
+					<armorPenetrationSharp>12</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>圆锯劈砍</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>40</power>
+					<cooldownTime>1.2</cooldownTime>
+					<chanceFactor>0.10</chanceFactor>
+					<armorPenetrationBlunt>2.80</armorPenetrationBlunt>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_SpecterUnchained"]</xpath>
+		<value>
+			<statBases>
+				<Bulk>6.5</Bulk>
+				<MeleeCounterParryBonus>0.4</MeleeCounterParryBonus>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_SpecterUnchained"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.5</MeleeCritChance>
+				<MeleeParryChance>0.45</MeleeParryChance>
+				<MeleeDodgeChance>0.1</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>

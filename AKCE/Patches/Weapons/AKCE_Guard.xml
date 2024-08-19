@@ -122,48 +122,54 @@
 		<value>
 			<tools Inherit = "false">
 				<li Class="CombatExtended.ToolCE">
-					<label>handle</label>
-					<capacities>
-						<li>Poke</li>
-					</capacities>
-					<power>3</power>
-					<cooldownTime>1.69</cooldownTime>
-					<chanceFactor>0.10</chanceFactor>
-					<armorPenetrationBlunt>0.80</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-				</li>
-				<li Class="CombatExtended.ToolCE">
-					<label>edge</label>
-					<capacities>
-						<li>Cut</li>
-					</capacities>
-					<power>47</power>
-					<extraMeleeDamages>
-						<li>
-							<def>Flame</def>
-							<amount>5</amount>
-						</li>
-					</extraMeleeDamages>
-					<cooldownTime>1.17</cooldownTime>
-					<armorPenetrationBlunt>4.06</armorPenetrationBlunt>
-					<armorPenetrationSharp>24</armorPenetrationSharp>
-					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
-				</li>
-				<li Class="CombatExtended.ToolCE">
-					<label>point</label>
+					<label>莱万汀-捅</label>
 					<capacities>
 						<li>Stab</li>
 					</capacities>
-					<power>25</power>
+					<power>24</power>
 					<extraMeleeDamages>
 						<li>
-							<def>Flame</def>
-							<amount>3</amount>
+							<def>Burn</def>
+							<amount>24</amount>
 						</li>
 					</extraMeleeDamages>
-					<cooldownTime>1.05</cooldownTime>
+					<cooldownTime>1.6</cooldownTime>
+					<armorPenetrationBlunt>14.06</armorPenetrationBlunt>
+					<armorPenetrationSharp>30</armorPenetrationSharp>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>莱万汀-刺</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>27</power>
+					<extraMeleeDamages>
+						<li>
+							<def>Burn</def>
+							<amount>27</amount>
+						</li>
+					</extraMeleeDamages>
+					<cooldownTime>1.4</cooldownTime>
 					<armorPenetrationBlunt>2.048</armorPenetrationBlunt>
-					<armorPenetrationSharp>32</armorPenetrationSharp>
+					<armorPenetrationSharp>30</armorPenetrationSharp>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>莱万汀-劈</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>21</power>
+					<extraMeleeDamages>
+                        <li>
+                            <def>Burn</def>
+                            <amount>21</amount>
+                        </li>
+                    </extraMeleeDamages> 
+					<cooldownTime>1.2</cooldownTime>
+					<chanceFactor>0.10</chanceFactor>
+					<armorPenetrationSharp>30</armorPenetrationSharp>
+					<armorPenetrationBlunt>24.80</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
 		</value>
@@ -173,7 +179,7 @@
 		<xpath>Defs/ThingDef[defName="AK_Weapon_Surtr" or defName="AK_Weapon_SurtrColorfulWonderland"]</xpath>
 		<value>
 			<statBases>
-				<Bulk>8.5</Bulk>
+				<Bulk>8</Bulk>
 				<MeleeCounterParryBonus>0.80</MeleeCounterParryBonus>
 			</statBases>
 		</value>
@@ -197,23 +203,24 @@
 		<value>
 			<tools Inherit = "false">
 				<li Class="CombatExtended.ToolCE">
-					<label>handle</label>
+					<label>电锯猛砸</label>
 					<capacities>
-						<li>Poke</li>
+						<li>Blunt</li>
 					</capacities>
-					<power>10</power>
-					<cooldownTime>1.69</cooldownTime>
+					<power>30</power>
+					<cooldownTime>1.8</cooldownTime>
 					<chanceFactor>0.10</chanceFactor>
-					<armorPenetrationBlunt>2.80</armorPenetrationBlunt>
+                    <armorPenetrationSharp>4</armorPenetrationSharp>
+					<armorPenetrationBlunt>12.80</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
-					<label>blade</label>
+					<label>快档切割</label>
 					<capacities>
 						<li>Cut</li>
 					</capacities>
-					<power>10</power>
-					<cooldownTime>1</cooldownTime>
+					<power>37</power>
+					<cooldownTime>0.8</cooldownTime>
 					<extraMeleeDamages>
 						<li>
 							<def>Cut</def>
@@ -236,8 +243,41 @@
 							<chance>0.3</chance>
 						</li>
 					</extraMeleeDamages>
-					<armorPenetrationBlunt>1.06</armorPenetrationBlunt>
+					<armorPenetrationBlunt>8.06</armorPenetrationBlunt>
 					<armorPenetrationSharp>10</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>慢档切割</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>45</power>
+					<cooldownTime>2.0</cooldownTime>
+					<extraMeleeDamages>
+						<li>
+							<def>Cut</def>
+							<amount>10</amount>
+							<chance>0.3</chance>
+						</li>
+						<li>
+							<def>Cut</def>
+							<amount>10</amount>
+							<chance>0.3</chance>
+						</li>
+						<li>
+							<def>Cut</def>
+							<amount>10</amount>
+							<chance>0.3</chance>
+						</li>
+						<li>
+							<def>Cut</def>
+							<amount>10</amount>
+							<chance>0.3</chance>
+						</li>
+					</extraMeleeDamages>
+					<armorPenetrationBlunt>8.06</armorPenetrationBlunt>
+					<armorPenetrationSharp>14</armorPenetrationSharp>
 					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
@@ -1703,18 +1743,18 @@
 		<value>
 			<tools Inherit = "false">
 				<li Class="CombatExtended.ToolCE">
-					<label>handle</label>
+					<label>剑柄猛砸</label>
 					<capacities>
 						<li>Poke</li>
 					</capacities>
 					<power>5</power>
 					<chanceFactor>0.33</chanceFactor>
 					<cooldownTime>1.44</cooldownTime>
-					<armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+					<armorPenetrationBlunt>4.5</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
-					<label>edge</label>
+					<label>剑砍</label>
 					<capacities>
 						<li>Cut</li>
 					</capacities>
@@ -1725,13 +1765,13 @@
 					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
-					<label>point</label>
+					<label>剑捅</label>
 					<capacities>
 						<li>Stab</li>
 					</capacities>
 					<power>16</power>
 					<cooldownTime>0.94</cooldownTime>
-					<armorPenetrationBlunt>3</armorPenetrationBlunt>
+					<armorPenetrationBlunt>6</armorPenetrationBlunt>
 					<armorPenetrationSharp>25</armorPenetrationSharp>
 				</li>
 			</tools>
@@ -2331,7 +2371,6 @@
 					<cooldownTime>1.4</cooldownTime>
 					<chanceFactor>0.10</chanceFactor>
 					<armorPenetrationBlunt>8</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
 					<label>劈砍</label>
@@ -2340,9 +2379,8 @@
 					</capacities>
 					<power>34</power>
 					<cooldownTime>1.65</cooldownTime>
-					<armorPenetrationBlunt>40</armorPenetrationBlunt>
-					<armorPenetrationSharp>16</armorPenetrationSharp>
-					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>36</armorPenetrationBlunt>
+					<armorPenetrationSharp>12</armorPenetrationSharp>
 				</li>
 				<li Class="CombatExtended.ToolCE">
 					<label>剑刃长刺</label>
@@ -2351,8 +2389,8 @@
 					</capacities>
 					<power>36</power>
 					<cooldownTime>2.25</cooldownTime>
-					<armorPenetrationBlunt>30</armorPenetrationBlunt>
-					<armorPenetrationSharp>24</armorPenetrationSharp>
+					<armorPenetrationBlunt>24</armorPenetrationBlunt>
+					<armorPenetrationSharp>16</armorPenetrationSharp>
 				</li>
 				<li Class="CombatExtended.ToolCE">
 					<label>剑刃长刺</label>
@@ -2361,8 +2399,8 @@
 					</capacities>
 					<power>40</power>
 					<cooldownTime>3.25</cooldownTime>
-					<armorPenetrationBlunt>30</armorPenetrationBlunt>
-					<armorPenetrationSharp>32</armorPenetrationSharp>
+					<armorPenetrationBlunt>24</armorPenetrationBlunt>
+					<armorPenetrationSharp>24</armorPenetrationSharp>
 				</li>
 			</tools>
 		</value>
@@ -2372,7 +2410,7 @@
 		<xpath>Defs/ThingDef[defName="AK_Weapon_RadiantKnight"]</xpath>
 		<value>
 			<statBases>
-				<Bulk>18.5</Bulk>
+				<Bulk>8.5</Bulk>
 				<MeleeCounterParryBonus>10</MeleeCounterParryBonus>
 			</statBases>
 		</value>
@@ -2477,6 +2515,225 @@
 			</equippedStatOffsets>
 		</value>
 	</Operation>
+
+	<!-- ========== 嘉维尔 ========== -->
+    
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_InvincibleA"]/tools</xpath>
+		<value>
+			<tools Inherit = "false">
+				<li Class="CombatExtended.ToolCE">
+					<label>锯刃</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>10</power>
+					<extraMeleeDamages>
+						<li>
+							<def>Cut</def>
+							<amount>10</amount>
+							<chance>0.3</chance>
+						</li>
+						<li>
+							<def>Cut</def>
+							<amount>10</amount>
+							<chance>0.3</chance>
+						</li>
+						<li>
+							<def>Cut</def>
+							<amount>10</amount>
+							<chance>0.3</chance>
+						</li>
+						<li>
+							<def>Cut</def>
+							<amount>10</amount>
+							<chance>0.3</chance>
+						</li>
+					</extraMeleeDamages>
+					<cooldownTime>0.3</cooldownTime>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+					<armorPenetrationBlunt>12.80</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_InvincibleB"]/tools</xpath>
+		<value>
+			<tools Inherit = "false">
+				<li Class="CombatExtended.ToolCE">
+					<label>斧刃砍击</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>50</power>
+					<cooldownTime>1.69</cooldownTime>
+					<armorPenetrationSharp>12</armorPenetrationSharp>
+					<armorPenetrationBlunt>8.80</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>斧柄猛砸</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>40</power>
+					<cooldownTime>2</cooldownTime>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>2</amount>
+                        </li>
+                    </extraMeleeDamages>
+					<armorPenetrationBlunt>24</armorPenetrationBlunt>
+					<armorPenetrationSharp>10</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_InvincibleB"]</xpath>
+		<value>
+			<statBases>
+				<Bulk>8.0</Bulk>
+				<MeleeCounterParryBonus>0</MeleeCounterParryBonus>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_InvincibleB"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.1</MeleeCritChance>
+				<MeleeParryChance>0.3</MeleeParryChance>
+				<MeleeDodgeChance>0</MeleeDodgeChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<!-- ========== 锏 ========== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_DegenbrecherA"]/tools</xpath>
+		<value>
+			<tools Inherit = "false">
+				<li Class="CombatExtended.ToolCE">
+					<label>劈砍</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>0.9</cooldownTime>
+					<armorPenetrationSharp>18</armorPenetrationSharp>
+					<armorPenetrationBlunt>0.80</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>刀击</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>35</power>
+					<cooldownTime>1.6</cooldownTime>
+					<armorPenetrationBlunt>8.06</armorPenetrationBlunt>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>刀柄猛砸</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>18</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationBlunt>6.048</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_DegenbrecherA"]</xpath>
+		<value>
+			<statBases>
+				<Bulk>4</Bulk>
+				<MeleeCounterParryBonus>0.80</MeleeCounterParryBonus>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_DegenbrecherA"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.00</MeleeCritChance>
+				<MeleeParryChance>0.60</MeleeParryChance>
+				<MeleeDodgeChance>0.40</MeleeDodgeChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_DegenbrecherB"]/tools</xpath>
+		<value>
+			<tools Inherit = "false">
+				<li Class="CombatExtended.ToolCE">
+					<label>劈砍</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>22</power>
+					<cooldownTime>0.9</cooldownTime>
+					<armorPenetrationSharp>12</armorPenetrationSharp>
+					<armorPenetrationBlunt>2.80</armorPenetrationBlunt>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>刀击</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>35</power>
+					<cooldownTime>1.6</cooldownTime>
+					<armorPenetrationBlunt>12.06</armorPenetrationBlunt>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>刀柄猛砸</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>18</power>
+					<cooldownTime>1.5</cooldownTime>
+					<armorPenetrationBlunt>6.048</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_DegenbrecherB"]</xpath>
+		<value>
+			<statBases>
+				<Bulk>4</Bulk>
+				<MeleeCounterParryBonus>0.80</MeleeCounterParryBonus>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_DegenbrecherB"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>1.00</MeleeCritChance>
+				<MeleeParryChance>0.60</MeleeParryChance>
+				<MeleeDodgeChance>0.40</MeleeDodgeChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
 
 </Patch>
 

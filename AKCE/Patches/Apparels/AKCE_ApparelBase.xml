@@ -17,7 +17,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="AK_ArmorBase"]/statBases</xpath>
 		<value>
-			<Bulk>5</Bulk>
+			<Bulk>2</Bulk>
 			<WornBulk>1</WornBulk>
 		</value>
 	</Operation>
@@ -56,7 +56,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="AK_ArmorBase_Guard"]/statBases</xpath>
 		<value>
-			<Bulk>7.5</Bulk>
+			<Bulk>3</Bulk>
 			<WornBulk>2</WornBulk>
 		</value>
 	</Operation>
@@ -79,8 +79,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="AK_ArmorBase_Defender"]/statBases</xpath>
 		<value>
-			<Bulk>10</Bulk>
-			<WornBulk>5</WornBulk>
+			<Bulk>4</Bulk>
+			<WornBulk>4</WornBulk>
 		</value>
 	</Operation>
 

@@ -57,8 +57,6 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>0.07</MeleeCritChance>
-				<MeleeParryChance>0.95</MeleeParryChance>
-				<MeleeDodgeChance>0</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -78,7 +76,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_CuoraTypeB"]</xpath>
 		<value>
-			<ThingDef ParentName="AKCE_Apparel_ShieldBase">
+			<ThingDef ParentName="AKCE_Apparel_ShieldBase" Inherit="true">
 				<defName>AK_Weapon_CuoraTypeB</defName>
 				<label>蛇屠箱的背包</label>
 				<description>蛇屠箱的背包，由高强度金属材料缝合而成。\n很硬，超级硬。</description>
@@ -91,12 +89,12 @@
 	</Operation>
 
 
-	<Operation Class="PatchOperationAdd">
+	<!--Operation Class="PatchOperationAdd">
 		<xpath>Defs/AK_DLL.OperatorDef[defName="AK_Recruit_Cuora"]/apparels</xpath>
 		<value>
 			<li>AK_Weapon_CuoraTypeB</li>
 		</value>
-	</Operation>
+	</Operation-->
 
 	<!--================森蚺=======================-->
 
@@ -154,8 +152,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>0.10</MeleeCritChance>
-				<MeleeParryChance>0.15</MeleeParryChance>
-				<MeleeDodgeChance>0.20</MeleeDodgeChance>
+				<MeleeParryChance>0.25</MeleeParryChance>
+				<MeleeDodgeChance>0.15</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -346,7 +344,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_Hoshiguma"]/statBases</xpath>
 		<value>
-			<Bulk>14</Bulk>
+			<Bulk>8</Bulk>
 			<MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
 		</value>
 	</Operation>
@@ -356,8 +354,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>0.10</MeleeCritChance>
-				<MeleeParryChance>0.15</MeleeParryChance>
-				<MeleeDodgeChance>0.20</MeleeDodgeChance>
+				<MeleeParryChance>0.75</MeleeParryChance>
+				<MeleeDodgeChance>0.50</MeleeDodgeChance>
 				<IncomingDamageFactor>0.75</IncomingDamageFactor>
 			</equippedStatOffsets>
 		</value>
@@ -396,7 +394,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_Mudrock"]/statBases</xpath>
 		<value>
-			<Bulk>14</Bulk>
+			<Bulk>4</Bulk>
 			<MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
 		</value>
 	</Operation>
@@ -406,8 +404,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>0.5</MeleeCritChance>
-				<MeleeParryChance>0.25</MeleeParryChance>
-				<MeleeDodgeChance>0.20</MeleeDodgeChance>
+				<MeleeParryChance>0.75</MeleeParryChance>
+				<MeleeDodgeChance>0.2</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -478,8 +476,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>0.2</MeleeCritChance>
-				<MeleeParryChance>0.35</MeleeParryChance>
-				<MeleeDodgeChance>0.2</MeleeDodgeChance>
+				<MeleeParryChance>0.25</MeleeParryChance>
+				<MeleeDodgeChance>0.25</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -509,19 +507,48 @@
 	</Operation>
 
 	<!--=================塞雷娅==============-->
-
 	<Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="AK_Weapon_SariaA"]/tools</xpath>
+        <value>
+		    <tools Inherit = "false">
+				<li Class="CombatExtended.ToolCE">
+					<label>盾击</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>24</power>
+					<chanceFactor>0.33</chanceFactor>
+					<cooldownTime>1.2</cooldownTime>
+					<extraMeleeDamages>
+          			    <li>
+            			    <def>Stun</def>
+            			    <amount>9</amount>
+          			    </li>
+        		    </extraMeleeDamages>
+					<armorPenetrationBlunt>12.425</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_SariaA"]</xpath>
 		<value>
-			<ThingDef ParentName="AKCE_Apparel_ShieldBase">
-				<defName>AK_Weapon_SariaA</defName>
-				<label>塞雷娅的盾</label>
-				<description>塞雷娅的盾形法杖，覆盖上珐琅质后坚硬无比。\n明明能用拳击却偏偏要用盾，没有人知道为何。</description>
-				<graphicData>
-					<texPath>Things/AK_Agents/Weapon/Defender/SariaW</texPath>
-					<graphicClass>Graphic_Single</graphicClass>
-				</graphicData>
-			</ThingDef>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.2</MeleeCritChance>
+				<MeleeParryChance>0.25</MeleeParryChance>
+				<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_SariaA"]</xpath>
+		<value>
+			<weaponTags>
+				<li>CE_OneHandedWeapon</li>
+			</weaponTags>
 		</value>
 	</Operation>
 
@@ -534,53 +561,13 @@
 					<capacities>
 						<li>Poke</li>
 					</capacities>
-					<power>2</power>
+					<power>12</power>
 					<chanceFactor>0.33</chanceFactor>
 					<cooldownTime>1.44</cooldownTime>
 					<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 				</li>
-				<li Class="CombatExtended.ToolCE">
-					<label>point</label>
-					<capacities>
-						<li>Stab</li>
-					</capacities>
-					<power>27</power>
-					<cooldownTime>1.44</cooldownTime>
-					<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
-					<armorPenetrationSharp>0.48</armorPenetrationSharp>
-					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-				</li>
 			</tools>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="AK_Weapon_SariaB"]/statBases</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="AK_Weapon_SariaB"]</xpath>
-			<value>
-				<statBases/>
-			</value>
-		</nomatch>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="AK_Weapon_SariaB"]/statBases</xpath>
-		<value>
-			<Bulk>3.5</Bulk>
-			<MeleeCounterParryBonus>0.35</MeleeCounterParryBonus>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="AK_Weapon_SariaB"]</xpath>
-		<value>
-			<equippedStatOffsets>
-				<MeleeCritChance>0.2</MeleeCritChance>
-				<MeleeParryChance>0.35</MeleeParryChance>
-				<MeleeDodgeChance>0.2</MeleeDodgeChance>
-			</equippedStatOffsets>
 		</value>
 	</Operation>
 
@@ -659,8 +646,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>0.2</MeleeCritChance>
-				<MeleeParryChance>0.35</MeleeParryChance>
-				<MeleeDodgeChance>0.2</MeleeDodgeChance>
+				<MeleeParryChance>0.30</MeleeParryChance>
+				<MeleeDodgeChance>0.1</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -733,7 +720,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_CroissantA"]/statBases</xpath>
 		<value>
-			<Bulk>8</Bulk>
+			<Bulk>4</Bulk>
 			<MeleeCounterParryBonus>0.48</MeleeCounterParryBonus>
 		</value>
 	</Operation>
@@ -743,8 +730,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>1.25</MeleeCritChance>
-				<MeleeParryChance>0.36</MeleeParryChance>
-				<MeleeDodgeChance>0.30</MeleeDodgeChance>
+				<MeleeParryChance>0.15</MeleeParryChance>
+				<MeleeDodgeChance>0.1</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -807,7 +794,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_Aurora"]/statBases</xpath>
 		<value>
-			<Bulk>14</Bulk>
+			<Bulk>4</Bulk>
 			<MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
 		</value>
 	</Operation>
@@ -818,7 +805,7 @@
 			<equippedStatOffsets>
 				<MeleeCritChance>0.10</MeleeCritChance>
 				<MeleeParryChance>0.15</MeleeParryChance>
-				<MeleeDodgeChance>0.20</MeleeDodgeChance>
+				<MeleeDodgeChance>0.1</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -833,7 +820,7 @@
 			<SightsEfficiency>0.7</SightsEfficiency>
 			<ShotSpread>0.16</ShotSpread>
 			<SwayFactor>1.00</SwayFactor>
-			<Bulk>18</Bulk>
+			<Bulk>8</Bulk>
 		</statBases>
 		<Properties>
 			<recoilAmount>2.72</recoilAmount>
@@ -928,7 +915,7 @@
 			<SightsEfficiency>0.7</SightsEfficiency>
 			<ShotSpread>0.16</ShotSpread>
 			<SwayFactor>1.00</SwayFactor>
-			<Bulk>18</Bulk>
+			<Bulk>8</Bulk>
 		</statBases>
 		<Properties>
 			<recoilAmount>2.72</recoilAmount>
@@ -1057,7 +1044,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_GummyA"]/statBases</xpath>
 		<value>
-			<Bulk>8</Bulk>
+			<Bulk>6</Bulk>
 			<MeleeCounterParryBonus>0.48</MeleeCounterParryBonus>
 		</value>
 	</Operation>
@@ -1067,8 +1054,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>1.25</MeleeCritChance>
-				<MeleeParryChance>0.36</MeleeParryChance>
-				<MeleeDodgeChance>0.30</MeleeDodgeChance>
+				<MeleeParryChance>0.20</MeleeParryChance>
+				<MeleeDodgeChance>0.05</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -1163,8 +1150,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>0.2</MeleeCritChance>
-				<MeleeParryChance>0.35</MeleeParryChance>
-				<MeleeDodgeChance>0.2</MeleeDodgeChance>
+				<MeleeParryChance>0.15</MeleeParryChance>
+				<MeleeDodgeChance>0.05</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -1237,7 +1224,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_VulcanA"]/statBases</xpath>
 		<value>
-			<Bulk>8</Bulk>
+			<Bulk>4</Bulk>
 			<MeleeCounterParryBonus>0.48</MeleeCounterParryBonus>
 		</value>
 	</Operation>
@@ -1247,8 +1234,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>1.25</MeleeCritChance>
-				<MeleeParryChance>0.36</MeleeParryChance>
-				<MeleeDodgeChance>0.30</MeleeDodgeChance>
+				<MeleeParryChance>0.20</MeleeParryChance>
+				<MeleeDodgeChance>0.10</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -1321,7 +1308,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_NearlA"]/statBases</xpath>
 		<value>
-			<Bulk>8</Bulk>
+			<Bulk>4</Bulk>
 			<MeleeCounterParryBonus>0.48</MeleeCounterParryBonus>
 		</value>
 	</Operation>
@@ -1331,8 +1318,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>1.25</MeleeCritChance>
-				<MeleeParryChance>0.36</MeleeParryChance>
-				<MeleeDodgeChance>0.30</MeleeDodgeChance>
+				<MeleeParryChance>0.15</MeleeParryChance>
+				<MeleeDodgeChance>0.10</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -1379,7 +1366,7 @@
 					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
-					<label>head</label>
+					<label>Cut</label>
 					<capacities>
 						<li>Blunt</li>
 					</capacities>
@@ -1405,7 +1392,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_Penance"]/statBases</xpath>
 		<value>
-			<Bulk>14</Bulk>
+			<Bulk>4</Bulk>
 			<MeleeCounterParryBonus>0.48</MeleeCounterParryBonus>
 		</value>
 	</Operation>
@@ -1415,8 +1402,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>1.25</MeleeCritChance>
-				<MeleeParryChance>0.36</MeleeParryChance>
-				<MeleeDodgeChance>0.30</MeleeDodgeChance>
+				<MeleeParryChance>0.50</MeleeParryChance>
+				<MeleeDodgeChance>0.40</MeleeDodgeChance>
 				<IncomingDamageFactor>0.75</IncomingDamageFactor>
 			</equippedStatOffsets>
 		</value>
@@ -1490,7 +1477,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="AK_Weapon_Beagle"]/statBases</xpath>
 		<value>
-			<Bulk>8</Bulk>
+			<Bulk>4</Bulk>
 			<MeleeCounterParryBonus>0.48</MeleeCounterParryBonus>
 		</value>
 	</Operation>
@@ -1500,8 +1487,8 @@
 		<value>
 			<equippedStatOffsets>
 				<MeleeCritChance>1.25</MeleeCritChance>
-				<MeleeParryChance>0.36</MeleeParryChance>
-				<MeleeDodgeChance>0.30</MeleeDodgeChance>
+				<MeleeParryChance>0.10</MeleeParryChance>
+				<MeleeDodgeChance>0.10</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -1759,5 +1746,56 @@
 			</li>
 		</value>
 	</Operation>
+
+	<!--黍-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_Shu"]/tools</xpath>
+		<value>
+			<tools Inherit = "false">
+				<li Class="CombatExtended.ToolCE">
+					<label>Blunt</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>24.8</power>
+					<cooldownTime>2</cooldownTime>
+					<armorPenetrationBlunt>3.6</armorPenetrationBlunt>
+					<armorPenetrationSharp>0.72</armorPenetrationSharp>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_Shu"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="AK_Weapon_Shu"]</xpath>
+			<value>
+				<statBases/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_Shu"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_Shu"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MeleeCritChance>0.10</MeleeCritChance>
+				<MeleeParryChance>0.25</MeleeParryChance>
+				<MeleeDodgeChance>0.15</MeleeDodgeChance>
+				<IncomingDamageFactor>0.75</IncomingDamageFactor>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
 
 </Patch>

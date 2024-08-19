@@ -65,15 +65,9 @@
 		<label>法术(单体)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>45</speed>
-			<damageAmountBase>14</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBlunt>16.48</armorPenetrationBlunt>
 			<armorPenetrationSharp>5.1</armorPenetrationSharp>
-            <secondaryDamage>
-				<li>
-					<def>Flame</def>
-					<amount>6</amount>
-				</li>
-			</secondaryDamage>
 		</projectile>
 	</ThingDef>
 

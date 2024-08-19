@@ -27,4 +27,5 @@
 			<xpath>Defs/ThingDef[@Name="AK_WeaponBase_Magic"]/verbs</xpath>
 		</match>
 	</Operation>
+
 </Patch>

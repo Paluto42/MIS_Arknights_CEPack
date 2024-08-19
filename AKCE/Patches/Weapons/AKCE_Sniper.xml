@@ -2,7 +2,7 @@
 <Patch>
 	<!--Patch_All_to_ToolCE-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="AK_Weapon_Executor" or defName="AK_Weapon_Exusiai" or defName="AK_Weapon_Pinecone" or defName="AK_Weapon_AgentW" or defName="AK_Weapon_Rosa" or defName="AK_Weapon_Meteorite" or defName="AK_Weapon_Fiammetta" or defName="Ak_Weapon_Toddifons" or defName="Ak_Weapon_Typhon"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="AK_Weapon_Executor" or defName="AK_Weapon_Exusiai" or defName="AK_Weapon_Pinecone" or defName="AK_Weapon_AgentW" or defName="AK_Weapon_Rosa" or defName="AK_Weapon_Meteorite" or defName="AK_Weapon_Fiammetta" or defName="Ak_Weapon_Toddifons" or defName="Ak_Weapon_Typhon" or defName="AK_Weapon_ChenHolungday"]/tools</xpath>
 		<value>
 			<tools Inherit = "false">
 				<li Class="CombatExtended.ToolCE">
@@ -70,7 +70,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="AK_Weapon_Greythroat" or defName="AK_Weapon_Provence" or defName="AK_Weapon_Schwarz" or defName="AK_Weapon_Platinum" or defName="AK_Weapon_Archetto" or defName="AK_Weapon_Bluepoison" or defName="AK_Weapon_April" or defName="AK_Weapon_Fartooth" or defName="AK_Weapon_Vermeil" or defName="AK_Weapon_Lunacub" or defName="AK_Weapon_Pozyomka" or defName="AK_Weapon_Kroos" or defName="AK_Weapon_Firewatch"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="AK_Weapon_Greythroat" or defName="AK_Weapon_Provence" or defName="AK_Weapon_Schwarz" or defName="AK_Weapon_Platinum" or defName="AK_Weapon_Archetto" or defName="AK_Weapon_Bluepoison" or defName="AK_Weapon_April" or defName="AK_Weapon_Fartooth" or defName="AK_Weapon_Vermeil" or defName="AK_Weapon_Lunacub" or defName="AK_Weapon_Pozyomka" or defName="AK_Weapon_Kroos" or defName="AK_Weapon_Firewatch" or defName="AK_Weapon_Ray"]/tools</xpath>
 		<value>
 			<tools Inherit = "false">
 				<li Class="CombatExtended.ToolCE">
@@ -84,6 +84,7 @@
 			</tools>
 		</value>
 	</Operation>
+
     <!-- ===============送葬人=============== -->
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>AK_Weapon_Executor</defName>
@@ -272,6 +273,9 @@
 			<defaultProjectile>Projectile_AKCE_Provence</defaultProjectile>
 			<warmupTime>1.0</warmupTime>
 			<range>25</range>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
 			<soundCast>AK_Sound_Weapon_GeneralArrow</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 		</Properties>
@@ -304,6 +308,9 @@
 			<defaultProjectile>Projectile_AKCE_Schwarz</defaultProjectile>
 			<warmupTime>1.0</warmupTime>
 			<range>55</range>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
 			<soundCast>AK_Sound_Weapon_GeneralArrow</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 		</Properties>
@@ -777,15 +784,19 @@
 		<Properties>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Projectile_AKCE_Schwarz</defaultProjectile>
+			<defaultProjectile>Projectile_AKCE_Pozyomka</defaultProjectile>
+			<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
 			<warmupTime>1.0</warmupTime>
 			<range>55</range>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
 			<soundCast>AK_Sound_Weapon_GeneralArrow</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 		</Properties>
 		<AmmoUser>
 			<magazineSize>1</magazineSize>
-			<reloadTime>3.5</reloadTime>
+			<reloadTime>2.5</reloadTime>
 			<ammoSet>AmmoSet_AKCEHeavyshooter</ammoSet>
 		</AmmoUser>
 		<FireModes>
@@ -1088,10 +1099,10 @@
 					<shaderType>TransparentPostLight</shaderType>
 				</graphicData>
 				<projectile Class="CombatExtended.ProjectilePropertiesCE">
-					<damageDef>Blunt</damageDef>
-					<damageAmountBase>30</damageAmountBase>
-					<armorPenetrationSharp>0</armorPenetrationSharp>
-					<armorPenetrationBlunt>15</armorPenetrationBlunt>
+					<damageDef>Bomb</damageDef>
+					<damageAmountBase>40</damageAmountBase>
+					<armorPenetrationSharp>12</armorPenetrationSharp>
+					<armorPenetrationBlunt>25</armorPenetrationBlunt>
 					<explosionRadius>2.5</explosionRadius>
 					<flyOverhead>true</flyOverhead>
 					<soundExplode>MortarBomb_Explode</soundExplode>
@@ -1147,6 +1158,10 @@
 			</targetParams>
 			<muzzleFlashScale>14</muzzleFlashScale>
 		</Properties>
+		<AmmoUser>
+			<magazineSize>18</magazineSize>
+			<reloadTime>10.5</reloadTime>
+		</AmmoUser>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
@@ -1196,4 +1211,101 @@
 			</tools>
 		</value>
 	</Operation>
+
+	<!-- ===============莱伊=============== -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+			<ThingDef ParentName="AK_BulletBaseProjectile">
+				<defName>Projectile_AKCE_Ray</defName>
+				<label>射击</label>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+		    	    <damageDef>Bullet</damageDef>
+			        <speed>50</speed>
+			        <stoppingPower>2</stoppingPower>
+		  	        <damageAmountBase>38</damageAmountBase>
+			        <soundExplode>ThumpCannon_Impact</soundExplode>
+			        <armorPenetrationSharp>16</armorPenetrationSharp>
+			        <armorPenetrationBlunt>10.5</armorPenetrationBlunt>
+		        </projectile>
+			</ThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AK_Weapon_Ray</defName>
+		<statBases>
+			<Mass>8.2</Mass>
+			<Bulk>6</Bulk>
+			<SwayFactor>0.5</SwayFactor>
+			<ShotSpread>0.05</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Projectile_AKCE_Ray</defaultProjectile>
+			<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+			<warmupTime>1.5</warmupTime>
+			<range>45</range>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<burstShotCount>3</burstShotCount>
+			<soundCast>AK_Sound_Weapon_GeneralPistol</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<noiseRadius>3</noiseRadius>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>8</magazineSize>
+			<reloadTime>2.5</reloadTime>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+	</Operation>
+
+	<!-- ===============水陈=============== -->
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>AK_Weapon_ChenHolungday</defName>
+		<statBases>
+			<Mass>8.2</Mass>
+			<Bulk>6</Bulk>
+			<SwayFactor>0.5</SwayFactor>
+			<ShotSpread>0.05</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Projectile_AKCE_Pozyomka</defaultProjectile>
+			<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+			<warmupTime>1.5</warmupTime>
+			<range>20</range>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<burstShotCount>2</burstShotCount>
+			<soundCast>AK_Sound_Weapon_GeneralPistol</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<noiseRadius>3</noiseRadius>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>32</magazineSize>
+			<reloadTime>4.5</reloadTime>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+	</Operation>
+
 </Patch>

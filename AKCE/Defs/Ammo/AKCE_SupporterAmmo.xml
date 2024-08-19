@@ -24,14 +24,10 @@
 		<defName>Projectile_AKCE_GeneralSupporterA</defName>
 		<label>法术(单体)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>40</speed>
-			<damageAmountBase>10</damageAmountBase>
+			<speed>50</speed>
+			<damageAmountBase>14</damageAmountBase>
 			<stoppingPower>8</stoppingPower>
             <secondaryDamage>
-			    <li>
-					<def>Flame</def>
-					<amount>4</amount>
-				</li>
 				<li>
 					<def>Stun</def>
 					<amount>2</amount>
@@ -46,17 +42,11 @@
 		<defName>Projectile_AKCE_GeneralSupporterB</defName>
 		<label>法术(单体)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>40</speed>
-			<damageAmountBase>10</damageAmountBase>
+			<speed>50</speed>
+			<damageAmountBase>14</damageAmountBase>
             <stoppingPower>3</stoppingPower>
 			<armorPenetrationBlunt>6.48</armorPenetrationBlunt>
 			<armorPenetrationSharp>2.1</armorPenetrationSharp>
-            <secondaryDamage>
-				<li>
-					<def>Flame</def>
-					<amount>4</amount>
-				</li>
-			</secondaryDamage>
 		</projectile>
 	</ThingDef>
 

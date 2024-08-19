@@ -925,6 +925,33 @@
 	</Operation>
 
     <!--=================浊心斯卡蒂==============-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_CorruptingHeart"]/tools</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="AK_Weapon_CorruptingHeart"]</xpath>
+			<value>
+				<tools/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AK_Weapon_CorruptingHeart"]/tools</xpath>
+		<value>
+			<tools Inherit = "false">
+				<li Class="CombatExtended.ToolCE">
+					<label>法杖敲击</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>12</power>
+					<cooldownTime>1.6</cooldownTime>
+					<armorPenetrationBlunt>6</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
 
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>AK_Weapon_CorruptingHeart</defName>

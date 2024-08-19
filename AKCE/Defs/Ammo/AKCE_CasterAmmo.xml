@@ -12,9 +12,9 @@
 			<damageAmountBase>16</damageAmountBase>
 			<armorPenetrationBlunt>12.48</armorPenetrationBlunt>
 			<armorPenetrationSharp>5.1</armorPenetrationSharp>
-            <secondaryDamage>
+           <secondaryDamage>
 				<li>
-					<def>Flame</def>
+					<def>AK_Projectile_Magic</def>
 					<amount>6</amount>
 				</li>
 			</secondaryDamage>
@@ -29,9 +29,9 @@
 			<damageAmountBase>16</damageAmountBase>
 			<armorPenetrationBlunt>12.48</armorPenetrationBlunt>
 			<armorPenetrationSharp>5.1</armorPenetrationSharp>
-            <secondaryDamage>
+			<secondaryDamage>
 				<li>
-					<def>AK_Projectile_Magic</def>
+					<def>Flame</def>
 					<amount>6</amount>
 				</li>
 			</secondaryDamage>
@@ -48,7 +48,7 @@
 			<armorPenetrationSharp>5.1</armorPenetrationSharp>
             <secondaryDamage>
 				<li>
-					<def>Flame</def>
+					<def>AK_Projectile_Magic</def>
 					<amount>6</amount>
 				</li>
 			</secondaryDamage>
@@ -65,7 +65,7 @@
 			<armorPenetrationSharp>4</armorPenetrationSharp>
             <secondaryDamage>
 				<li>
-					<def>Flame</def>
+					<def>AK_Projectile_Magic</def>
 					<amount>6</amount>
 				</li>
 			</secondaryDamage>
