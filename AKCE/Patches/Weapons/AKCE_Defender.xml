@@ -103,26 +103,27 @@
 		<value>
 			<tools Inherit = "false">
 				<li Class="CombatExtended.ToolCE">
-					<label>handle</label>
+					<label>斧砍</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
+					<power>36</power>
+					<cooldownTime>2.18</cooldownTime>
+					<armorPenetrationBlunt>4.6</armorPenetrationBlunt>
+					<armorPenetrationSharp>6.72</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>斧柄猛砸</label>
 					<capacities>
 						<li>Poke</li>
 					</capacities>
 					<power>3</power>
 					<cooldownTime>1.59</cooldownTime>
 					<chanceFactor>0.10</chanceFactor>
-					<armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+					<armorPenetrationSharp>2.72</armorPenetrationSharp>
+					<armorPenetrationBlunt>12.625</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-				</li>
-				<li Class="CombatExtended.ToolCE">
-					<label>edge</label>
-					<capacities>
-						<li>Cut</li>
-					</capacities>
-					<power>22</power>
-					<cooldownTime>2.18</cooldownTime>
-					<armorPenetrationBlunt>3.6</armorPenetrationBlunt>
-					<armorPenetrationSharp>0.72</armorPenetrationSharp>
-					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
 		</value>
@@ -368,14 +369,26 @@
 		<value>
 			<tools Inherit = "false">
 				<li Class="CombatExtended.ToolCE">
-					<label>head</label>
+					<label>锤击</label>
 					<capacities>
 						<li>Blunt</li>
 					</capacities>
-					<power>25</power>
-					<cooldownTime>3.55</cooldownTime>
+					<power>30</power>
+					<cooldownTime>1.6</cooldownTime>
+					<armorPenetrationSharp>4</armorPenetrationSharp>
 					<armorPenetrationBlunt>16</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>轰击</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>57</power>
+					<cooldownTime>3.55</cooldownTime>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+					<armorPenetrationBlunt>36</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 				</li>
 			</tools>
 		</value>
@@ -417,36 +430,15 @@
 		<value>
 			<tools Inherit = "false">
 				<li Class="CombatExtended.ToolCE">
-					<label>handle</label>
-					<capacities>
-						<li>Poke</li>
-					</capacities>
-					<power>2</power>
-					<chanceFactor>0.33</chanceFactor>
-					<cooldownTime>1.44</cooldownTime>
-					<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-				</li>
-				<li Class="CombatExtended.ToolCE">
-					<label>point</label>
-					<capacities>
-						<li>Stab</li>
-					</capacities>
-					<power>27</power>
-					<cooldownTime>1.44</cooldownTime>
-					<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
-					<armorPenetrationSharp>0.48</armorPenetrationSharp>
-					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-				</li>
-				<li Class="CombatExtended.ToolCE">
-					<label>edge</label>
+					<label>刀劈</label>
 					<capacities>
 						<li>Cut</li>
 					</capacities>
-					<power>20</power>
-					<cooldownTime>1.34</cooldownTime>
-					<armorPenetrationBlunt>0.956</armorPenetrationBlunt>
-					<armorPenetrationSharp>0.43</armorPenetrationSharp>
+					<power>31</power>
+					<chanceFactor>0.33</chanceFactor>
+					<cooldownTime>1.44</cooldownTime>
+					<armorPenetrationSharp>4</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.425</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
@@ -594,7 +586,7 @@
 					<power>2</power>
 					<chanceFactor>0.33</chanceFactor>
 					<cooldownTime>1.44</cooldownTime>
-					<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
+					<armorPenetrationBlunt>4.425</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
@@ -604,8 +596,8 @@
 					</capacities>
 					<power>27</power>
 					<cooldownTime>1.44</cooldownTime>
-					<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
-					<armorPenetrationSharp>0.48</armorPenetrationSharp>
+					<armorPenetrationBlunt>4.425</armorPenetrationBlunt>
+					<armorPenetrationSharp>6.48</armorPenetrationSharp>
 					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
@@ -616,7 +608,7 @@
 					<power>20</power>
 					<cooldownTime>1.34</cooldownTime>
 					<armorPenetrationBlunt>0.956</armorPenetrationBlunt>
-					<armorPenetrationSharp>0.43</armorPenetrationSharp>
+					<armorPenetrationSharp>4.43</armorPenetrationSharp>
 					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
