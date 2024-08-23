@@ -137,7 +137,7 @@
 			<defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
 			<warmupTime>0.6</warmupTime>
 			<range>25</range>
-			<burstShotCount>6</burstShotCount>
+			<burstShotCount>3</burstShotCount>
 			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 			<soundCast>AK_Sound_Weapon_Exusiai</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1115,7 +1115,7 @@
 				</projectile>
 				<comps>
 					<li Class="CombatExtended.CompProperties_ExplosiveCE">
-						<damageAmountBase>40</damageAmountBase>
+						<damageAmountBase>80</damageAmountBase>
 						<explosiveDamageType>Bomb</explosiveDamageType>
 						<explosiveRadius>3.9</explosiveRadius>
 						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
@@ -1134,8 +1134,8 @@
 		<defName>AK_Weapon_Wisadel</defName>
 		<statBases>
 			<Mass>15</Mass>
-			<Bulk>15</Bulk>
-			<SwayFactor>0.5</SwayFactor>
+			<Bulk>10</Bulk>
+			<SwayFactor>0.25</SwayFactor>
 			<ShotSpread>0.05</ShotSpread>
 			<SightsEfficiency>1</SightsEfficiency>
 			<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
@@ -1149,18 +1149,18 @@
 			<range>60</range>
 			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
 			<burstShotCount>3</burstShotCount>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
 			<soundCast>InfernoCannon_Fire</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<onlyManualCast>true</onlyManualCast>
 			<stopBurstWithoutLos>false</stopBurstWithoutLos>
-			<targetParams>
-				<canTargetLocations>true</canTargetLocations>
-			</targetParams>
 			<muzzleFlashScale>14</muzzleFlashScale>
 		</Properties>
 		<AmmoUser>
 			<magazineSize>18</magazineSize>
-			<reloadTime>10.5</reloadTime>
+			<reloadTime>4.5</reloadTime>
 		</AmmoUser>
 	</Operation>
 
